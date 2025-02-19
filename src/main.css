@@ -27,3 +27,7 @@
   background-color: rgb(54, 132, 171);
   color: white;
 }
+.pizza-image {
+  width: 50%; /* Ajusta el tamaño de la imagen al 50% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}

@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 // import LoginPage from "./components/LoginPage";
 import Home from "./components/Home";
 import NavbarApp from "./components/Navbar";
-// import Pizza from "./components/Pizza";
+import Pizza from "./components/Pizza";
 //import RegisterPage from "./components/RegisterPage";
 
 function App() {
@@ -11,14 +11,14 @@ function App() {
     <>
       <NavbarApp />
 
-      <Home />
+      {/* <Home /> */}
 
       {/* <RegisterPage /> */}
 
       {/* <LoginPage /> */}
 
       {/* <Cart /> */}
-      {/* <Pizza /> */}
+      <Pizza />
 
       <Footer />
     </>

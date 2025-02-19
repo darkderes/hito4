@@ -12,20 +12,35 @@ const Pizza = () => {
   }, []);
 
   return (
-    <>
-      <h1>{pizza.name}</h1>
-      <img src={pizza.img} alt={pizza.name} />
-      <p>{pizza.desc}</p>
-      <p>{pizza.price}</p>
-      {pizza.ingredients && (
-        <ul>
-          {pizza.ingredients.map((ingredient, index) => (
-            <li key={index}>{ingredient}</li>
-          ))}
-        </ul>
-      )}
-      <button className="btn btn-dark">Add to Cart</button>
-    </>
+    <div className="container mt-5">
+      <div className="card">
+        <h1 className="card-title text-center mb-5 ">Pizza {pizza.name}</h1>
+        <img
+          className="card-img-top pizza-image mx-auto d-block"
+          src={pizza.img}
+          alt={pizza.name}
+        />
+        <div className="card-body">
+          <p className="card-text mx-3">{pizza.desc}</p>
+          <h2 className="text-center">Ingredientes:</h2>
+          {pizza.ingredients && (
+            <ul className="list-group list-group-flush">
+              {pizza.ingredients.map((ingredient, index) => (
+                <li key={index} className="list-group-item text-center">
+                  {ingredient}
+                </li>
+              ))}
+            </ul>
+          )}
+          <div className="d-flex   align-items-center  mt-3">
+            <p className="card-text text-danger fs-2 mx-3 mb-0">
+              $ {pizza.price.toLocaleString()}
+            </p>
+            <button className="btn btn-dark">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -32,7 +32,7 @@ const Pizza = () => {
               ))}
             </ul>
           )}
-          <div className="d-flex   align-items-center  mt-3">
+          <div className="d-flex justify-content-end align-items-center mt-3">
             <p className="card-text text-danger fs-2 mx-3 mb-0">
               $ {pizza.price.toLocaleString()}
             </p>

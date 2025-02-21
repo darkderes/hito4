@@ -34,7 +34,7 @@ const Pizza = () => {
           )}
           <div className="d-flex justify-content-end align-items-center mt-3">
             <p className="card-text text-danger fs-2 mx-3 mb-0">
-              $ {pizza.price.toLocaleString()}
+              $ {pizza.price ? pizza.price.toLocaleString() : ""}
             </p>
             <button className="btn btn-dark">Add to Cart</button>
           </div>
